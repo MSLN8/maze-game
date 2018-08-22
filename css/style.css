@@ -1,21 +1,21 @@
 body {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    height: 100vh;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     }
     
     .board {
-    display: flex;
-    margin : auto;
+    /* display: flex; */
+    /* margin : auto; */
     background-color: black;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     border: 1px solid white;
+    box-sizing: border-box;
     }
 
     .container {
-    height: 670px;
-    width: 670px;
+    height: 750px;
+    width: 750px;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -31,14 +31,13 @@ body {
         width: 100vw;
         height: 100vh;
         color: #fff;
-        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-        background-size: 400% 400%;
+      
         animation: Gradient 10s ease infinite;
     }
     
     game {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width : 100%;
         flex-direction: row;
     }
@@ -49,7 +48,6 @@ body {
         width: 25%;
         justify-content: center;
         align-content : center;
-        float : left;
         border: 1px solid white;
         margin-top: 80px;
         text-align: center;
@@ -68,7 +66,6 @@ body {
         flex-direction: column;
         width: 25%;
         justify-content: center;
-        float : right;
         border: 1px solid white;
         text-align: center;
         margin-top: 80px;
@@ -83,13 +80,27 @@ body {
     }
     
     .footer {
-        background-color: #F1F1F1;
         text-align: center;
         padding: 10px;
     }
 
-    .path {
-        background-color : blue
-
+    .road {
+        color : blue;
+        background-color : blue;
+        background-size: cover;
     }
-    
+
+    .player {
+        color : pink;
+        background-color : pink;
+    }
+
+    .finish {
+        color : yellow;
+        background-color : yellow;
+    } 
+
+    .wall {
+        color : darkmagenta;
+        background-color: darkmagenta;
+    }

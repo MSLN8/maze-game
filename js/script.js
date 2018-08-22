@@ -39,15 +39,14 @@ function Board () {
     [ 0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 3, 0 ], ];
 }
   
-var game = new Board;
-console.log(game);
+var game = new Board;  
 
 function createMyBoard () {
     for( var i = 0; i < 30; i++ ) {
       for( var j = 0; j < 30; j++ ) {
         var newDiv = document.createElement("div");
-        // $ div id = "j" - "i" class=path
-        newDiv.className += "board";
+        newDiv.setAttribute("id", i + "-" + j );
+        newDiv.classList += "board";
         $(".container")[0].appendChild(newDiv);
       };
     };
@@ -55,14 +54,65 @@ function createMyBoard () {
 
 createMyBoard();
 
-       
-// function animate () {
-//   for( var i = 0; i < 30; i++ ) {
-//     for( var j = 0; j < 30; j++ ) {
-//         if(game.maze[i][j] == 0) {
-  //selectionner html id ij et lui appliquer css
-//       };
-//     };
-//   };
-// };
+function animate () {
+  for( var i = 0; i < 30; i++ ) {
+    for( var j = 0; j < 30; j++ ) {
+        if(game.maze[i][j] === 0) {
+        $("#" + i + "-" + j).addClass("road");
+        } else if (game.maze[i][j] === 1) {
+        $("#" + i + "-" + j).addClass("wall");
+        } else if (game.maze[i][j] === 2) {
+        $("#" + i + "-" + j).addClass("player");
+        } else if (game.maze[i][j] === 3) {
+        $("#" + i + "-" + j).addClass("finish");
+        };
+      };
+    };
+  };
+  animate();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+
+// function check()
+//     {
+//         if (event.keyCode == 38){changeDir('top');}
+//         if (event.keyCode == 39){changeDir('right');}
+//         if (event.keyCode == 40){changeDir('bottom');}
+//         if (event.keyCode == 37){changeDir('left');}
+    
+    // switch (event.keyCode) {
+//     function changeDir(arg)
+//         switch (event.keyCode) {
+//             case 'top':
+//             dir = 'top';
+//             break;
+//             case 'right':
+//             dir = 'right';
+//             break;
+//             case 'left':
+//             dir = 'left';
+//             break;
+//             case 'bottom':
+//             dir = 'bottom';
+//             break;
+//         }
+//     }
+
+//     
