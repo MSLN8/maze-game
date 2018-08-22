@@ -1,12 +1,39 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title> Maze Game </title>
-<link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <title>my Maze Game</title>
 </head>
 <body>
-<script src ="./js/script.js"> </script>
-<script src ="./js/maze.js"> </script>
+<div id="gradient"></div>
+
+<game> 
+    <div class= "section-left">
+        <div class="caption"> </div>
+        <h2>Légende : </h2>
+        <div class="instructions"> </div>
+        <h2>Instructions de jeu : </h2>
+    </div>
+
+    <div class="section-middle"> 
+            <h1> Maze Game </h1> 
+            <div class = "container"></div>
+    </div>
+
+    <div class = "section-right"> 
+        <h2> Time counter : 2mn left </h2>
+    </div>
+
+    <canvas id="mygameboard" width="150" height="150"></canvas>
+</game>
+
+<script src="./js/script.js"></script>
 </body>
 </html>
+
