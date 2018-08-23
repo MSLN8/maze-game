@@ -6,10 +6,11 @@ body {
     .board {
     /* display: flex; */
     /* margin : auto; */
-    background-color: black;
+    /* background-color: black; */
     height: 25px;
     width: 25px;
-    border: 1px solid white;
+    /* background-image: url('../images/floor.jpg'); */
+    /* border: 1px solid white; */
     box-sizing: border-box;
     }
 
@@ -85,26 +86,88 @@ body {
     }
 
     .road {
-        color : blue;
-        background-color : blue;
+        /* color : blue; */
+        /* background-color :transparent; */
         background-size: cover;
+        background-image: url('../images/floor.jpg');
     }
 
     .player {
-        color : pink;
-        background-color : pink;
+        /* color : pink; */
+        background-image: url('../images/bojack1.png'), url('../images/floor.jpg') ;
+        
     }
 
     .finish {
-        color : yellow;
-        background-color : yellow;
+        /* color : yellow; */
+        /* background-color : transparent; */
+
+
+        background-image:  url('../images/tunnel.png'), url('../images/floor.jpg') ;;
     } 
 
     .wall {
-        color : darkmagenta;
-        background-color: darkmagenta;
+        /* color : darkmagenta; */
+        /* background-color: darkmagenta; */
+        background-image: url('../images/wall.jpg');
     }
 
-    /* .youWin {
+    .win-message {
+        height: 750px;
+        width: 750px;
+        justify-content: space-between;
+        align-items: center;
+        border: 5px solid white;
+        flex-wrap: wrap;
+        background-color: aquamarine;
+        } 
 
-    } */
+    .button {
+        border: 2px;
+        color : black;
+        display: none; 
+    }
+
+    #introScreen {
+        position : absolute;
+        z-index : 101;
+        width : 600px;
+        height : 400px;
+        background-color: black;   
+    }
+
+    #introScreenContent{
+        width : 400px;
+        height: 200px;
+        padding : 20px;
+        background-color: white;
+        margin : 80 auto;
+        text-align : center;
+       }
+
+
+    #endScreen {
+        position : absolute;
+        z-index : 101;
+        width : 600px;
+        height : 400px;
+        background-color: black;
+        display: none;
+    }
+
+    #endScreenContent{
+     width : 400px;
+     height: 200px;
+     padding : 20px;
+     background-color: white;
+     margin : 80 auto;
+     text-align : center;
+    }
+
+    .light {
+     color : green;   
+    }
+
+    .oos {
+    background-image: url('../images/oos-ground.png')  
+    }
