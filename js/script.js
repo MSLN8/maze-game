@@ -70,6 +70,7 @@ function updateBoard () {
         $("#" + i + "-" + j).addClass("player");
         } else if (game.maze[i][j] === 3) {
         $("#" + i + "-" + j).addClass("finish");
+        
         };
       };
     };
@@ -137,12 +138,10 @@ function updateBoard () {
         break;
       }
 
-      if ([game.player.y === 28 ][game.player.x === 29]) {
-       console.log("you win");
-      }
-
       updateBoard();
   }
+  
+  
 
   
       //----------------------------------------------------------------------------------------
