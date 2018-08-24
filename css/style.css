@@ -4,13 +4,8 @@ body {
     }
     
     .board {
-    /* display: flex; */
-    /* margin : auto; */
-    /* background-color: black; */
     height: 25px;
     width: 25px;
-    /* background-image: url('../images/floor.jpg'); */
-    /* border: 1px solid white; */
     box-sizing: border-box;
     }
 
@@ -68,6 +63,7 @@ body {
 
     h2 {
         text-decoration : underline;
+        color : white;
     }
 
     p {
@@ -126,14 +122,27 @@ body {
     }
 
     .win-message {
-        height: 750px;
-        width: 750px;
+        height: 412px;
+        width: 618px;
         justify-content: space-between;
         align-items: center;
         border: 5px solid white;
-        flex-wrap: wrap;
-        background-color: aquamarine;
-        } 
+        background-image: url('../images/Winimg.jpg');
+        text-align: center;
+        color : white ;
+        font-size : 60px;
+    } 
+    .gameovermessage {
+        height: 300px;
+        width: 550px;
+        justify-content: space-between;
+        align-items: center;
+        border: 5px solid white;
+        background-image: url('../images/loser.jpg');
+        text-align: center;
+        color : white ;
+        font-size : 60px;
+    }
 
     .button {
         border: 2px;
@@ -159,14 +168,7 @@ body {
        }
 
 
-    #endScreen {
-        position : absolute;
-        z-index : 101;
-        width : 600px;
-        height : 400px;
-        background-color: black;
-        display: none;
-    }
+   
 
     #endScreenContent{
      width : 400px;
@@ -187,7 +189,7 @@ body {
 
     button {
         background-color: darkgray;
-        border-radius: 8%;
+        border-radius: 15%;
         color: white;
         padding: 15px 32px;
         text-align: center;

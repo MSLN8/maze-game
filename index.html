@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <title> An Allegory for Life - Maze Game</title>
 </head>
 <body>
@@ -18,41 +15,33 @@
         <h2>INSTRUCTIONS :</h2>
         <div class="instructions"> </div>
          <p>Find your way through this labyrinth. <br>
-            Be careful, you only have <b>2 minutes</b> to reach the exit. <br>
-            You can use the joker (the <i>HELP ME I'M LOST</i> button) only once, use it wisely</p>
+            Be careful, you only have <b>30 sec</b> to reach the exit. <br>
+            You can use the <i>HELP ME I'M LOST</i> button only once, use it wisely</p>
     </div>
 
     <div class="section-middle"> 
             <h1> Allegory - Maze Game </h1> 
-            <!-- <div id = introScreen">
-                <div id = "introScreenContent">
-                    <div id = "btnStart" class= "button" onclick = "startGame()"> Start Game</div>
-                </div>
-            </div> -->
-            <button id = "btnReplay"> Play again</button>
-            <!-- <div id = endScreen">
-                    <div id = "endScreenContent">
-                        <h1 id = "txtEndTitle">  You win </h1> 
-                        <h2 id = "txtEndMessage">  You reached the light at the end of the tunnel ! </h2>
-                        <div id = "btnReplay" class = "button" onclick = "replay()"> Play again</div>
-                    </div>
-                </div>
-            </div> -->
-
+            <button id = "btnReplay"> <b>Play again</b> </button>
+            <div class = "win-message"> <b>CONGRATS</b> <br> <b>You win !</b></div>
+            <div class = "gameovermessage"> <b>Time out ! Try again ! </b> </div>
             <div class = "container"></div>
+           
     </div>
 
     <div class = "section-right"> 
-        <h2> Time counter : 2mn left </h2>
-        <br>
-        <br>
+    <div id="countdown">
+        <h2> Time counter : <span> </span> seconds left </h2>
+    </div>
         <button class="tourch"> <b>HELP ME I'M LOST</b> </button>
     </div>
 
 </game>
 
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 <script src="./js/script.js"></script>
+
 </body>
 </html>
 
