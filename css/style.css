@@ -148,6 +148,7 @@ body {
         border: 2px;
         color : black;
         display: none; 
+        align-items: center;
     }
 
     #introScreen {
@@ -166,7 +167,6 @@ body {
         margin : 80 auto;
         text-align : center;
        }
-
 
    
 
@@ -199,4 +199,8 @@ body {
 
     .section-right > h2 {
         align-content: center;
+    }
+
+    section-middle {
+        text-align: center;
     }
