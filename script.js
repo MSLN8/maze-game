@@ -1,6 +1,6 @@
 window.onload = function () {
   var player = new Image;
-  player.src = '../images/bojack.jpeg'
+  player.src = './images/bojack.jpeg'
 
   //////////////////////////////////////////// Board //////////////////////////////////////////////////
 
