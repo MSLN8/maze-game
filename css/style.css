@@ -1,15 +1,10 @@
 body {
     height: 100vh;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    }
-    
-    .board {
-    height: 25px;
-    width: 25px;
-    box-sizing: border-box;
-    }
+}
 
-    .container {
+
+.container {
     height: 750px;
     width: 750px;
     justify-content: space-between;
@@ -17,190 +12,189 @@ body {
     display: flex;
     border: 5px solid white;
     flex-wrap: wrap;
-    }
+}
     
-    #gradient {
-        z-index: -1;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        width: 100vw;
-        height: 100vh;
-        color: #fff;
-      
-        animation: Gradient 10s ease infinite;
-    }
+#gradient {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
     
-    game {
-        display: flex;
-        justify-content: space-around;
-        width : 100%;
-        flex-direction: row;
-    }
+    animation: Gradient 10s ease infinite;
+}
     
-    .section-left {
-        display : flex;
-        flex-direction: column;
-        width: 25%;
-        /* justify-content: center; */
-        align-content : center;
-        border: 1px solid white;
-        margin-top: 80px;
-        text-align: center;
-        background-image: url('../images/right\ col.jpeg');
-        color : white;
-    }
+game {
+    display: flex;
+    justify-content: space-around;
+    width : 100%;
+    flex-direction: row;
+}
+  /* ------------------SECTIONS-----------------------------  */
+.section-left {
+    display : flex;
+    flex-direction: column;
+    width: 25%;
+    align-content : center;
+    border: 1px solid white;
+    margin-top: 80px;
+    text-align: center;
+    background-image: url('../images/right\ col.jpeg');
+    color : white;
+}
     
     
-    .section-middle > h1 {
+.section-middle > h1 {
     display: flex;
     text-align: center;
     justify-content: center;
     color : white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: bold; 
-    }
+}
 
-    h2 {
-        text-decoration : underline;
-        color : white;
-    }
+h2 {
+    text-decoration : underline;
+    color : white;
+}
 
-    p {
-        line-height: 3;
-    }
+p {
+    line-height: 3;
+}
     
-    .section-right {
-        display: flex;
-        flex-direction: column;
-        width: 25%;
-        /* justify-content: center; */
-        border: 1px solid white;
-        text-align: center;
-        margin-top: 80px;
-        background-image: url('../images/hgdmtkaurtnz.jpg')
-    }
+.section-right {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid white;
+    text-align: center;
+    margin-top: 80px;
+    background-image: url('../images/hgdmtkaurtnz.jpg')
+}
+
+.section-right > h2 {
+    align-content: center;
+}
+
+.section-middle {
+    text-align: center;
+}
     
     
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-        .column-side, .column-middle {
-          width: 100%;
+/* ----------------------------------------Responsive layout ------------------------*/
+@media screen and (max-width: 600px) {
+    .column-side, .column-middle {
+      width: 100%;
       }
-    }
+}
     
-    .footer {
-        text-align: center;
-        padding: 10px;
-    }
+.footer {
+    text-align: center;
+    padding: 10px;
+}
 
-    .road {
-        /* color : blue; */
-        /* background-color :transparent; */
-        background-size: cover;
-        background-image: url('../images/floor.jpg');
-    }
 
-    .player {
-        /* color : pink; */
-        background-image: url('../images/bojack1.png'), url('../images/floor.jpg') ;
+/* ------------------------------------BOARD------------------------------------------ */
+.board {
+    height: 25px;
+    width: 25px;
+    box-sizing: border-box;
+}
+
+.road {
+    background-size: cover;
+    background-image: url('../images/floor.jpg');
+}
+
+.player {
+    background-image: url('../images/bojack1.png'), url('../images/floor.jpg') ;
         
-    }
+}
 
-    .finish {
-        /* color : yellow; */
-        /* background-color : transparent; */
+.finish {
+    background-image:  url('../images/exit.png'), url('../images/floor.jpg') ;;
+} 
+
+.wall {
+    background-image: url('../images/wall.jpg');
+}
 
 
-        background-image:  url('../images/exit.png'), url('../images/floor.jpg') ;;
-    } 
+/* -------------------------------------MESSAGES--------------------------------------------- */
+.win-message {
+    height: 412px;
+    width: 618px;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid white;
+    background-image: url('../images/Winimg.jpg');
+    text-align: center;
+    color : white ;
+    font-size : 60px;
+}
 
-    .wall {
-        /* color : darkmagenta; */
-        /* background-color: darkmagenta; */
-        background-image: url('../images/wall.jpg');
-    }
+.gameovermessage {
+    height: 300px;
+    width: 550px;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid white;
+    background-image: url('../images/loser.jpg');
+    text-align: center;
+    color : white ;
+    font-size : 60px;
+}
 
-    .win-message {
-        height: 412px;
-        width: 618px;
-        justify-content: space-between;
-        align-items: center;
-        border: 5px solid white;
-        background-image: url('../images/Winimg.jpg');
-        text-align: center;
-        color : white ;
-        font-size : 60px;
-    } 
-    .gameovermessage {
-        height: 300px;
-        width: 550px;
-        justify-content: space-between;
-        align-items: center;
-        border: 5px solid white;
-        background-image: url('../images/loser.jpg');
-        text-align: center;
-        color : white ;
-        font-size : 60px;
-    }
+.button {
+    border: 2px;
+    color : black;
+    display: none; 
+    align-items: center;
+}
 
-    .button {
-        border: 2px;
-        color : black;
-        display: none; 
-        align-items: center;
-    }
+#introScreen {
+    position : absolute;
+    z-index : 101;
+    width : 600px;
+    height : 400px;
+    background-color: black;   
+}
 
-    #introScreen {
-        position : absolute;
-        z-index : 101;
-        width : 600px;
-        height : 400px;
-        background-color: black;   
-    }
+#introScreenContent{
+    width : 400px;
+    height: 200px;
+    padding : 20px;
+    background-color: white;
+    margin : 80 auto;
+    text-align : center;
+}
 
-    #introScreenContent{
-        width : 400px;
-        height: 200px;
-        padding : 20px;
-        background-color: white;
-        margin : 80 auto;
-        text-align : center;
-       }
+#endScreenContent{
+ width : 400px;
+ height: 200px;
+ padding : 20px;
+ background-color: white;
+ margin : 80 auto;
+ text-align : center;
+}
 
-   
+.light {
+ color : green;   
+}
 
-    #endScreenContent{
-     width : 400px;
-     height: 200px;
-     padding : 20px;
-     background-color: white;
-     margin : 80 auto;
-     text-align : center;
-    }
+.oos {
+background-image: url('../images/oos-ground.png')  
+}
 
-    .light {
-     color : green;   
-    }
+button {
+    background-color: darkgray;
+    border-radius: 15%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+}
 
-    .oos {
-    background-image: url('../images/oos-ground.png')  
-    }
-
-    button {
-        background-color: darkgray;
-        border-radius: 15%;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none; 
-        font-size: 16px;
-    }
-
-    .section-right > h2 {
-        align-content: center;
-    }
-
-    .section-middle {
-        text-align: center;
-    }
